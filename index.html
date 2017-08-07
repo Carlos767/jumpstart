@@ -1,182 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JumpStart</title>
-    <script type="text/javascript" src="resources/js/main.js"></script>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="resources/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="resources/slick/slick.min.js"></script>
-    <script type="text/javascript" src="resources/js/main.js"></script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar-default navbar-fixed-top" style="top: -51px;">
-      ::before
+  <head>
+    <title>Jumpstart</title>
+    <!-- favicon image -->
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
+    <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+    <!-- bootstrap min css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- stylesheet -->
+    <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navigation menu -->
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
-        ::before
-        <li class="active">
-          <a href="#">Explore</a>
-        </li>
-        <li>
-          <a href="#">Start a project</a>
-        </li>
-        <li>
-          <a href="#">About us</a>
-        </li>
-        ::after
+        <ul class="nav navbar-nav">
+          <li class="nav-active"><a href="#">Explore</a></li>
+          <li><a href="#">Start a project</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+        <div class="logo navbar-brand navbar-right">
+          <img src="resources/images/logo.png" alt="logo">
+        </div>
       </div>
-      ::after
     </nav>
-    <!-- Jumbotron -->
-    <div class="carousel slick-initialised slick-slider">
-      <div aria-live="polite" class="slick-list">
-        <div class="slick-track" role="listbox" style="opacity: 1; width: 5316px; transform: translate3d(-3544px, 0px, 0px);">
-          ::before
-          <div class"jumbotron background-duffel slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1"style="width: 886px;">
-            <div class="container-fluid">
-              ::before
-              <h1>GET STARTED.</h1>
-              <p>What are you waiting for? Today's the day for your next big idea.</p>
-              ::after
-            </div>
-          </div>
-          <div class="jumbotron background-bike slick-slide" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 1341px;">
-            <div class="container-fluid">
-              ::before
-              <h1>Get Going.</h1>
-              <p>
-                "Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards."
-              </p>
-              ::after
-            </div>
-          </div>
-          ::after
+    <!-- caraousel section -->
+    <div class="caraousel">
+      <div class="jumbotron caraousel-item jumbotron-duffel">
+        <div class="container-fluid banner-text">
+          <h1>GET STARTED.</h1>
+          <p>What are you waiting for? Today's the day for your next big idea.</p>
+          <button type="button" class="btn btn-primary btn-lg">Jump in</button>
+        </div>
+      </div>
+      <div class="jumbotron caraousel-item jumbotron-bike">
+        <div class="container-fluid banner-text">
+          <h1>GET GOING</h1>
+          <p>Jumpstart your startup with some crowdsourced seed money,
+          or support one of our 300,000,000 creators and get rewards.</p>
+          <button type="button" class="btn btn-primary btn-lg">Jump in</button>
+        </div>
+      </div>
+      <div class="jumbotron caraousel-item jumbotron-flowers">
+        <div class="container-fluid banner-text">
+          <h1>GET CREATING.</h1>
+          <p>Stop overthinking projects and begin putting them out into the world.</p>
+          <button type="button" class="btn btn-primary btn-lg">Jump in</button>
+        </div>
+      </div>
+      <div class="jumbotron caraousel-item jumbotron-beer">
+        <div class="container-fluid banner-text">
+          <h1>GET THINKING</h1>
+          <p>Meet like-minded individuals who will help fuel your creative juices.</p>
+          <button type="button" class="btn btn-primary btn-lg">Jump in</button>
         </div>
       </div>
     </div>
-    <div class="relative-wrapper">
-      <a href="#" class="btn btn-primary btn-lg cta">Jump in!</a>
-    </div>
+
     <!-- Featured Project -->
     <div class="container featured-project">
-      ::before
       <div class="row">
-        ::before
-        <h2 class="col-xs-12">Featured project</h2>
-        ::after
-        </div>
-        <div class="row">
-          ::before
-          <div class="col-xs-12 col-md-6">
-            <div class="image-container">
-              <a href="#">
-                <img src="resources/images/featured-project.png" alt="featured">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <h3>DeFrost: A Documentary</h3>
-            <p>by Leo De Firenze</p>
-            <p>
-              "DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration."
-            </p>
-          </div>
-          <div class"col-xs-6 col-md-3 categories">
-            <h3>Product Categories</h3>
-            <ul>
-              <li>Art</li>
-              <li>Books</li>
-              <li>Crystals</li>
-              <li>Design</li>
-              <li>Doodles</li>
-              <li>Deedlybobs</li>
-              <li>Farming</li>
-              <li>Gadgets</li>
-              <li>Hoverboards</li>
-              <li>Jams, Jellies, Etc.</li>
-              <li>Magazines</li>
-              <li>Plants</li>
-              <li>Snakes & Snake Equipment</li>
-              <li>Tables</li>
-              <li>Ventriliquist Figures</li>
-              <li>Yoyos</li>
-            </ul>
-          </div>
-          ::after
-        </div>
-        ::after
+        <h3 class="col-xs-12">Featured Project</h3>
       </div>
-      <!-- Projects -->
-      <div class="container">
-        ::before
-        <div class="row">
-          ::before
-          <h2 class="col-xs-12">Projects</h2>
-          ::after
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="image-container">
+            <img src="resources/images/featured-project.png" alt="featured project image">
+          </div>
         </div>
-        <div class="row">
-          ::before
-          <div class="col-xs-12 col-sm-4 project">
-            <div class="image-container">
-              <a href="#">
-                <img src="resources/images/projects1.png" alt="project 1">
-              </a>
-            </div>
-            <h3>The Right Tights</h3>
-            <p>by Riley Mae</p>
-            <p>
-              "These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers."
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-4 project">
-            <div class="image-container">
-              <a href="#">
-                <img src="resources/images/project2.png" alt="project2">
-              </a>
-            </div>
-            <h3>Peppermint Smart Home</h3>
-            <p>by Brian McDonald</p>
-            <p>
-              "Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way."
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-4 project">
-            <div class="image-container">
-              <a href="#">
-                <img src="resources/images/project3.png" alt="project3">
-              </a>
-            </div>
-            <h3>American Streetlife</h3>
-            <p>by Patrick Wallace</p>
-            <p>
-              "I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album."
-            </p>
-          </div>
-          ::after
+        <div class="col-xs-6 col-md-3 featured-project-info">
+          <h4>DeFrost: A Documentary</h4>
+          <p>by Leo De Firenze</p>
+          <p>DeFrost is a documentary about growing up in a little red house in
+            a cold, harsh valley. This is a story about my mother's childhood.
+            This film attempts to capture vignettes of her upbringing â€” her family,
+            friends, pets, and eventual depature from a freezing valley in Northern
+            Italy â€” through beautiful cinematography and narration.</p>
         </div>
-        ::after
-      </div>
-      <!-- Help -->
-      <div class="container-fluid help">
-        ::before
-        <strong>Having trouble thinking of an idea?</strong>
-        <p>
-          "Inventor's block strikes at the worst times. But that's all changed with Jumpstart's Good Idea Generator Lite (GIGLi)."
-        </p>
-        <a href="#" class="btn btn-primary btn-lg">Learn More</a>
-        ::after
+        <div class="col-xs-6 col-md-3 product-categories">
+          <h4>Product Categories</h4>
+          <ul>
+            <li>Art</li>
+            <li>Books</li>
+            <li>Crystals</li>
+            <li>Design</li>
+            <li>Doodles</li>
+            <li>Deedlybobs</li>
+            <li>Farming</li>
+            <li>Gadgets</li>
+            <li>Hoverboards</li>
+            <li>Jams, Jellies, Etc.</li>
+            <li>Magazines</li>
+            <li>Plants</li>
+            <li>Snakes &amp; Snake Equipment</li>
+            <li>Tables</li>
+            <li>Ventriliquist Figures</li>
+            <li>Yoyos</li>
+        </ul>
+        </div>
       </div>
     </div>
-  </body>
+    
+    <!-- Projects -->
+    <div class="container project">
+      <div class="row">
+        <h3 class="col-xs-12">Projects</h3>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 project-item">
+          <div class="image-container">
+            <img src="resources/images/project1.png" alt="project image 1">
+          </div>
+          <h3>The Right Tights</h3>
+          <p>by Riley Mae</p>
+          <p>These tights are 50 denier, beautifully constructed, hand-dyed, and
+            guaranteed to last (no more ladders!). Made with high quality,
+            completely toxic-free materials. Custom colors available to all
+            backers.</p>
+        </div>
+        <div class="col-xs-12 col-md-4 project-img">
+          <div class="image-container">
+            <img src="resources/images/project2.png" alt="project image 2">
+          </div>
+          <h3>Peppermint Smart Home</h3>
+          <p>by Brian McDonald</p>
+          <p>Instantly upgrade your home with technology that keeps your family
+            and home safe. We've made Peppermint easy to use. Just talk to your
+            phone and Peppermint will help you every step of the way.</p>
+        </div>
+        <div class="col-xs-12 col-md-4 project-img">
+          <div class="image-container">
+            <img src="resources/images/project3.png" alt="project image 3">
+          </div>
+          <h3>American Streetlife</h3>
+          <p>by Patrick Wallace</p>
+          <p>I've been traveling around the United States for the past two years.
+            I've slept on hundreds of couches, more than a few benches,
+            and captured my experiences in this 120 page photo album.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <h1>Having trouble thinking of an idea?</h1>
+        <p>Inventors' block strikes at the worst times. But that's all changed
+          with Jumpstart's Good Idea Generator Lite (GIGLi).</p>
+        <button type="button" class="btn btn-primary btn-lg">Learn more</button>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+
+  </body>
 </html>
